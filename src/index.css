@@ -11,3 +11,287 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.bounding-box {
+  position: absolute;
+  border: 2px solid blue;
+}
+
+.bounding-box.highlighted {
+  border-color: yellow;
+}
+
+.bounding-box.non-highlighted {
+  border-color: blue;
+}
+.image-gallery-container {
+  display: flex;
+  justify-content: center;
+}
+
+.chart-container {
+  margin-top: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* styles.css */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: 200px; 
+  border: 1px solid #ccc;
+  padding: 10px; 
+  border-radius: 5px;
+}
+
+.image-card img {
+  height:300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  width: 100%;
+  max-width: 100%; 
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow-y: auto; 
+  max-height: 80vh; 
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.popup-inner-content {
+  padding: 20px;
+}
+
+.image-table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 35%;
+  margin-bottom: 20px;
+}
+
+.reduced-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.charts-container {
+  display: flex;
+  width: 100%;
+}
+
+.button {
+  margin: 5px;
+  padding: 15px 30px;
+  font-size: 24px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Upload.css */
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 10px;
+}
+
+.upload-input {
+  margin: 10px;
+}
+
+.upload-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  align-items: center;
+
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  /* padding: 8px; */
+  text-align: center;
+}
+
+.sort-dropdown {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sort-dropdown label {
+  margin-right: 10px;
+}
+
+.sort-dropdown select {
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.upload-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.upload-form {
+  margin-top: 20px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  width: 200px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+input[type='file'] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+
+.status {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  align-items: center;
+  height: 100vh;
+}
+.welcome-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.door-container {
+  display: flex;
+}
+
+.door {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f1010;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.door::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 2%; 
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.door:hover {
+  background-color: #29394a;
+  transform: scale(1.05);
+}
